@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Youcial</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="districts">
+        <item>Select District</item>
+        <item>Varanasi</item>
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Hyderabad</item>
+        <item>Kolkata</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="states">
+        <item>Select State</item>
+        <item>JK</item>
+        <item>Delhi</item>
+        <item>MP</item>
+        <item>Punjab</item>
+        <item>Bihar</item>
+        <item>Orissa</item>
+        <item>Others</item>
+    </string-array>
 </resources>
