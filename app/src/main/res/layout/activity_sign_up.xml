@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView android:text="SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_signup"
+                android:textSize="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/label_signup"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sample_dp"
+                android:id="@+id/edit_dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_name"
+                android:hint="Name"
+                android:focusable="true"
+                android:layout_below="@id/edit_dp"
+                android:textColorHighlight="#ff7ffc15"
+                android:textColorHint="#ffff25e6"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_age"
+                android:hint="Age"
+                android:focusable="true"
+                android:textColorHighlight="#ff7ffc15"
+                android:textColorHint="#ffff25e6"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/edit_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_age"
+                android:textColorHighlight="#ff7ffc15"
+                android:textColorHint="#ffff25e6"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_sex"
+                android:entries="@array/gender"></Spinner>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_street"
+                android:hint="Street Details"
+                android:focusable="true"
+                android:textColorHighlight="#ff7ffc15"
+                android:textColorHint="#ffff25e6"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/edit_sex"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_street"
+                android:textColorHighlight="#ff7ffc15"
+                android:textColorHint="#ffff25e6"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_district"
+                android:entries="@array/districts"></Spinner>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/edit_district"
+                android:textColorHighlight="#ff7ffc15"
+                android:textColorHint="#ffff25e6"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="200dp"
+                android:id="@+id/edit_state"
+                android:entries="@array/states"></Spinner>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.youcial.youcial;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -46,5 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    public void goto_signup(View view){
+        if(view.getId()==R.id.buttonLogin){
+            Intent it = new Intent(this,SignUp.class);
+            startActivity(it);
+        }
     }
 }
